@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Jasmine</title>
+
+    <link rel="stylesheet" href="lib/jasmine.css" />
+
+    <script type="text/javascript" src="lib/jasmine.js"></script>
+    <script type="text/javascript" src="lib/jasmine-html.js"></script>
+    <script type="text/javascript" src="lib/boot.js"></script>
+
+    <script type="text/javascript">
+        it('should have correct webPage title', function () {
+            expect(document.title).toBe("Programming Jasmine");
+        });
+    </script>
+
+</head>
+
+</html>

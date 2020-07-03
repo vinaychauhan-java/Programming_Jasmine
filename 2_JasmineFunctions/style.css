@@ -1,0 +1,38 @@
+.body{
+    font-family: 'Roboto', sans-serif;
+    background: #CDDC39;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    color : #673AB7;
+    font-size: 52px;
+}
+
+.input,
+.calc-container {
+  width: 100%;
+  color: #795548;
+  background: white;
+  border: solid 1px black;
+  font-size: 32px;
+  padding: 2px;
+  text-align: center;
+}
+
+.calc-container {
+  width: 50%;
+  margin: 25px auto 0;
+}
+
+.calc-container .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+/*  
+For Color Resolution :- https://www.materialui.co/colors
+*/
