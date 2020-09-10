@@ -51,7 +51,7 @@ function updateCalcResult(computedResult) {
 
 // Object.defineProperty(Calculator.prototype, 'version', {
 //     get: function () {
-//         return fetch('https://raw.githubusercontent.com/vinaychauhan-java/Programming_Jasmine/master/5_JasmineAsynchCode/resources/version.json')
+//         return fetch('https://raw.githubusercontent.com/vinaychauhan-java/Programming_Jasmine/master/5_JasmineAsynch/resources/version.json')
 //             .then(function (result) {
 //                 return result.json()
 //             }).then(function (json) {
@@ -64,7 +64,7 @@ function updateCalcResult(computedResult) {
 
 Object.defineProperty(Calculator.prototype, 'version', {
     get: async function () {
-        const result = await fetch('https://raw.githubusercontent.com/vinaychauhan-java/Programming_Jasmine/master/5_JasmineAsynchCode/resources/version.json');
+        const result = await fetch('https://raw.githubusercontent.com/vinaychauhan-java/Programming_Jasmine/master/5_JasmineAsynch/resources/version.json');
         const json = await result.json();
         return json.version;
     },
