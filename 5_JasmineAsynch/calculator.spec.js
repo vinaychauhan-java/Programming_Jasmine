@@ -156,12 +156,37 @@ describe('Test Suite for Calculator', function () {
         });
     });
 
+    // describe('Operation - getVersion', function () {
+    //     it('fetching version from external source', function (done) {
+    //         spyOn(window, 'fetch').and.returnValue(Promise.resolve(
+    //             new Response('{"version":"0.1"}')
+    //         ));
+
+    //         calc1.version.then(function (version) {
+    //             expect(version).toBe('0.1');
+    //             done();
+    //         });
+    //     });
+    // });
+
+    describe('Operation - getVersion', function () {
+        it('fetching version from external source', async function (done) {
+            spyOn(window, 'fetch').and.returnValue(Promise.resolve(
+                new Response('{"version":"0.1"}')
+            ));
+            const versionValue = await calc1.version;
+            expect(versionValue).toBe('0.1');
+            done();
+        });
+    });
+
     describe('Operation - ShowVersion using Spy', function () {
         it('calls calculator.version', function () {
             spyOn(document, 'getElementById').and.returnValue({
                 innerText: null
             })
-            const spyObj = spyOnProperty(Calculator.prototype, 'version', 'get')
+            const spyObj = spyOnProperty(Calculator.prototype, 'version', 'get').and.returnValue(
+                Promise.resolve());
             showVersion();
             expect(spyObj).toHaveBeenCalled();
         });
