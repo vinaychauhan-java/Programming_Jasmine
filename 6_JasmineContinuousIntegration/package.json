@@ -1,0 +1,22 @@
+{
+  "name": "programming-jasmine-calculator",
+  "version": "0.1.0",
+  "description": "Code snippets for Jasmine",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "Vinay Chauhan",
+  "license": "ISC",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine-core": "^3.6.0",
+    "karma": "^5.2.2",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-cli": "^2.0.0",
+    "karma-coverage": "^2.0.3",
+    "karma-jasmine": "^4.0.1",
+    "karma-jasmine-matchers": "^4.0.2",
+    "puppeteer": "^5.2.1"
+  }
+}
